@@ -2,7 +2,7 @@
 const express = require("express");
 const apiRoutes = require("./api-routes");
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 // Allows express app to handle data parsing
 app.use(express.urlencoded({ extended: true}));

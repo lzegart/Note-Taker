@@ -1,9 +1,9 @@
-const router = require("espress").Router();
+const router = require("express").Router();
 
-app.get("/index", function(req, res) {
+router.get("/index", function(req, res) {
     res.sendFile(path.join(__dirname, "public", "index.js"));
 });
-app.get("/notes", function(req, res) {
+router.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "public", "notes.html"));
 });
 
