@@ -19,14 +19,17 @@ router.post("/api/notes", function(req, res) {
             id: id,
         });
     });
-    
+    fs.writeFile("db", "db.json"), JSON.stringify(newNote), function(err, data) {
+        if (err) throw err;
+    }
     console.log(req.body);
+    console.log("Success!");
     res.send(200);
 });
 
 //        router.post should read file (db.json) to see what's there 
-// add new note to array that was read
-// write new array to db.json
+//        add new note to array that was read
+//        write new array to db.json
 // ? before adding to array, add id to note (can get randomly generated id)
 // 
 
