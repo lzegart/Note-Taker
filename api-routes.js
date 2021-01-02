@@ -27,7 +27,7 @@ router.post("/api/notes", function(req, res) {
             if (err) throw err;
             console.log("3");
             console.log("Success!");
-            res.send(200);
+            res.sendStatus(200);
         });
     });
     console.log("4");
@@ -51,7 +51,7 @@ router.delete("/api/notes/:id", function(req, res) {
          fs.writeFile(path.join(__dirname, "db", "db.json"), JSON.stringify(newArray), function(err, data) {
             if (err) throw err;
             console.log("Success!");
-            res.send(200);
+            res.sendStatus(200);
         });
     });
 });
