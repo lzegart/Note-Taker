@@ -11,12 +11,12 @@ router.get("/api/notes", function(req, res) {
 });
 
 router.post("/api/notes", function(req, res) {
-    console.log("1");
+    // console.log("1");
     fs.readFile(path.join(__dirname, "db", "db.json"), "utf8", function(err, data) {
         if (err) throw err;
         const newNote = JSON.parse(data);
         console.log(req.body);
-        console.log("2");
+        // console.log("2");
         const id = uuidv4(); // ⇨ '1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
         newNote.push({
             title: req.body.title,
@@ -25,12 +25,12 @@ router.post("/api/notes", function(req, res) {
         });
         fs.writeFile(path.join(__dirname, "db", "db.json"), JSON.stringify(newNote), function(err, data) {
             if (err) throw err;
-            console.log("3");
+            // console.log("3");
             console.log("Success!");
             res.sendStatus(200);
         });
     });
-    console.log("4");
+    // console.log("4");
 });
 
 router.delete("/api/notes/:id", function(req, res) {
