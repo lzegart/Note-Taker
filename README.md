@@ -8,6 +8,8 @@
   * [Technologies & Usage](#technologies-&-usage) 
   * [Installation](#installation)
   * [License](#license)
+  * [Photos](#photos)
+  * [Links](#links)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -30,6 +32,16 @@
 
   ## License
   No License
+
+  ## Photos
+  Deployed app ready to write new note, with existing notes on the side.
+  <img width="1039" alt="Ready for Note Page" src="https://user-images.githubusercontent.com/71571952/104107662-d0eeea80-5272-11eb-9676-8c638431554d.png">
+
+  When existing note is clicked, you can view the text recorded.
+  <img width="1039" alt="Existing Note" src="https://user-images.githubusercontent.com/71571952/104107704-3c38bc80-5273-11eb-86af-d95819d72a08.png">
+
+  ## Links
+  Link of video walkthrough: 
 
   ## Contributing
   Please contact me if you would like to collaborate.
